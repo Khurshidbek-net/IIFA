@@ -8,7 +8,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #F5F6F8;
+  background-color: #f5f6f8;
 }
 
 a {
@@ -21,7 +21,8 @@ li {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  width: 1440px;
+  max-width: 1245px;
   /* padding: 0 20px; */
 }
 
@@ -62,7 +63,7 @@ li {
   display: none;
 }
 
-.buttons .btn {
+.buttons-lang .btn {
   width: 117px;
   height: 46px;
   border-radius: 8px;
@@ -96,23 +97,23 @@ li {
   font-size: 64px;
   font-weight: 700;
   font-family: "Space Grotesk", sans-serif;
-  color: #64748B;
+  color: #64748b;
 }
 
 .hero .content span {
-  color: #FFC900;
+  color: #ffc900;
   text-transform: uppercase;
-  border-bottom: #FFC900 3px solid;
+  border-bottom: #ffc900 3px solid;
 }
 
 .hero .content p {
   font-size: 20px;
   font-weight: 400;
-  color: #64748B;
+  color: #64748b;
   line-height: 140%;
 }
 
-.hero button {
+.learn {
   width: 203px;
   height: 62px;
   border-radius: 8px;
@@ -144,18 +145,16 @@ li {
   height: auto;
 }
 
-
-
-
-.services{
+.services {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 800px;
 }
 
-.carts{
+.carts {
   position: absolute;
   top: 50px;
   display: flex;
@@ -167,7 +166,7 @@ li {
   gap: 20px;
 }
 
-.carts .cart{
+.carts .cart {
   width: 742px;
   height: 580px;
   padding: 30px 25px;
@@ -175,7 +174,7 @@ li {
   border-radius: 8px;
 }
 
-.carts .cart-side{
+.carts .cart-side {
   width: 628px;
   height: 491px;
   padding: 30px 25px;
@@ -192,26 +191,26 @@ li {
 .carts .cart-content p {
   font-size: 16px;
   font-weight: 400;
-  color: #64748B;
+  color: #64748b;
   line-height: 150%;
   word-spacing: 5px;
 }
 
-.carts .cart-content p{
+.carts .cart-content p {
   font-size: 16px;
   font-weight: 400;
-  color: #64748B;
+  color: #64748b;
   line-height: 150%;
   word-spacing: 10px;
 }
 
-.carts .cart-content img{
+.carts .cart-content img {
   width: 690px;
   height: 305px;
   border-radius: 8px;
 }
 
-.carts .cart-side img{
+.carts .cart-side img {
   width: 584px;
   height: 258px;
   border-radius: 8px;
@@ -220,19 +219,184 @@ li {
   display: none;
 }
 
+.courses-carts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
 
+.courses h3 {
+  font-size: 24px;
+  color: #64748b;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.courses-cart {
+  width: 300px;
+  height: 460px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 13px;
+}
+
+.courses-cart .price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff7373;
+  margin-top: 18px;
+  margin-bottom: 15px;
+  text-align: end;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.name h2 {
+  font-size: 24px;
+  color: #64748b;
+}
+
+.name p {
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.buttons button {
+  width: 124px;
+  height: 41px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff7373, #cd2525);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: white;
+}
+
+.certificates {
+  margin-bottom: 180px;
+}
+
+.certificates-content {
+  display: flex;
+  gap: 65px;
+}
+
+.certificates h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #64748b;
+  text-align: center;
+  margin-top: 132px;
+  margin-bottom: 72px;
+}
+
+.certificate-content p {
+  width: 90%;
+  font-size: 24px;
+  color: #64748b;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.certificate-content h3 {
+  font-family: "Space Grotesk";
+  font-size: 48px;
+  color: #64748b;
+}
+
+.certificate-carts {
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.certificate {
+  width: 464px;
+  height: 617px;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 24px;
+}
+
+.certificate-small {
+  width: 388px;
+  height: 516px;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 24px;
+}
+
+.certificate p {
+  font-size: 24px;
+  color: #64748b;
+  line-height: 130%;
+  margin-top: 24px;
+  font-weight: 400;
+}
+
+.aksiya {
+  background-color: #40bedb14;
+}
+
+.aksiya-container {
+  display: flex;
+  gap: 90px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.left-content h2 {
+  font-size: 40px;
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  color: #64748b;
+}
+
+.right-content img {
+  width: 524px;
+  height: 659px;
+}
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 90%;
-    max-width: 700px;
+    width: 85%;
+    max-width: 900px;
   }
 
   .menu {
     display: block;
   }
 
-  .logout{
+  .logout {
     display: block;
   }
 
@@ -245,7 +409,7 @@ li {
     display: none;
   }
 
-  .buttons {
+  .buttons-lang {
     display: none;
   }
 
@@ -281,22 +445,25 @@ li {
     position: relative;
     align-items: center;
     text-align: center;
+    margin-bottom: 400px;
   }
 
   .carts {
     position: absolute;
-    align-items: center;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
     align-items: end;
     overflow: hidden;
     right: 0;
-    left: 0px;
-    gap: 20px;
+    /* left: -250px; */
+    gap: 10px;
   }
 
   .carts .cart-content p {
     font-size: 6px;
     font-weight: 400;
-    color: #64748B;
+    color: #64748b;
     line-height: 150%;
     word-spacing: 5px;
   }
@@ -314,17 +481,11 @@ li {
     height: auto;
   }
 
-
-  .add-img img{
+  .add-img img {
     margin: 0 auto;
     width: 100%;
     max-width: 300px;
   }
-
-
-
-
-
 
   .text {
     display: block;
@@ -334,8 +495,119 @@ li {
     margin-top: 20px;
     font-size: 16px;
     font-weight: 400;
-    color: #64748B;
+    color: #64748b;
     line-height: 150%;
     word-spacing: 5px;
+  }
+
+  .courses-cart .price {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: end;
+  }
+
+  .courses-carts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .courses-cart {
+    width: 194px;
+    height: 265px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 13px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  .name h2 {
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  .name p {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .buttons p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #64748b;
+  }
+
+  .buttons button {
+    width: 70px;
+    height: 24px;
+    border-radius: 4.5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .certificates-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .certificates-content h3 {
+    font-size: 28px;
+  }
+
+  .certificates-content p {
+    font-size: 16px;
+  }
+
+  .certificate-carts {
+    gap: 20px;
+  }
+
+  .certificate {
+    width: 166px;
+    height: 221px;
+    border-radius: 3px;
+    align-items: center;
+    padding: 13px 7px;
+  }
+
+  .certificate-small {
+    width: 140px;
+    height: 186px;
+    border-radius: 3px;
+    padding: 13px 7px;
+  }
+
+  .certificate p,
+  .certificate-small p {
+    color: #64748b;
+    font-size: 8px;
+    margin-top: 9px;
+  }
+
+  .aksiya-container {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    padding-top: 80px;
+  }
+
+  .left-content h2 {
+    font-size: 28px;
+  }
+
+  .right-content img {
+    width: 336px;
+    height: 421px;
   }
 }
